@@ -6,7 +6,7 @@ pipeline {
         AWS_REGION = 'eu-central-1'
         AWS_ACCESS_KEY_ID = 'AKIAWXMJD7E4NKCL7EMH'
         AWS_SECRET_ACCESS_KEY = '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'
-        PACKER_TEMPLATE = '/usr/local/bin/packer.hcl'
+        PACKER_TEMPLATE = '/usr/local/bin/packer.pkr.hcl'
     } 
 
     stages {
