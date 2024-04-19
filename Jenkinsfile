@@ -22,5 +22,13 @@ pipeline {
                 }
             }
         }
+        stage('VALIDATE PACKER') {
+            steps {
+                script {
+                  sh 'packer validate .'
+                }
+            }
+        }
     }
-} 
+}    
+
