@@ -29,6 +29,13 @@ pipeline {
                 }
             }
         }
+        stage('BUILD PACKER') {
+            steps {
+                script {
+                  sh 'packer build ${PACKER_TEMPLATE}'
+                }
+            }
+        }
     }
 }    
 
